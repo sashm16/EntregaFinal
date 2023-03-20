@@ -1,0 +1,57 @@
+.contenedorTexto{
+    width: 80% ;
+    height: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: $margin-xlarge;
+    padding: $padding-large;
+    border: $bordeDoubleBlack;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contenedorTextoContactame{
+    @extend .contenedorTexto;
+    padding: $padding-xlarge;
+}
+
+@mixin textos{
+    font-size:$mainFont;
+    line-height: $interlineado;
+    color:$mainColor;
+    padding:$padding-small;
+    font-family: $mainFont;
+    font-weight: $textBold;
+    text-align: center;
+
+    
+}
+
+@mixin titulos{
+    color:$mainColor;
+    font-family:$mainFont;
+    font-weight: $textBold;
+    font-size: $textLg;
+}
+
+@mixin flex($dire, $justify, $align){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+    position: relative;
+    width: 100%;
+    padding: $padding-medium;
+  
+    
+}
+
+
+@mixin botonesLetras{
+    color:$mainColor;
+    font-family: $mainFont;
+    font-weight: $textBold;
+    padding: $padding-xsmall;
+}

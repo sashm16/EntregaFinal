@@ -1,0 +1,21 @@
+.footerTextCenter{
+    text-align: center;
+    padding: $padding-large;
+    width: 100%;
+    
+}
+
+.barraRedesSociales{
+    display: flex;
+    justify-content: center;
+    margin-top: $margin-small;
+    gap: 2rem;
+
+}
+
+.tamañoRedesSociales{
+    margin-top: $margin-large;
+    width: $ancho-elementoM;
+    height: $alto-elementoM;
+}
+

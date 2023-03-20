@@ -1,0 +1,121 @@
+/* TABLET */    
+/* Deje la misma estructura de Grid que en desktop */ 
+@media (max-width:768px){
+
+    .asideFoto{
+    
+        height: $alto-elementoXXL;
+        width: $ancho-elementoXXL;
+        border-radius: 50%;
+        padding: $padding-medium;
+        display: block;
+        margin: auto;
+
+    
+    }
+    
+    .contenedorTextoContactame{
+        @extend .contenedorTexto;
+        padding: $padding-large;
+    }
+    
+    
+    }
+
+    /* MOBILE */
+@media (max-width:480px)
+{
+    
+    .contenedor{
+       /* No le pongo grid display porque lo hereda */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "header"
+        "nav"
+        "mainNav"
+        "aside"
+        "footer"
+    
+    }
+    
+    .header{
+    
+        grid-area: header;
+    
+    }
+    
+    .nav{
+    
+        grid-area: nav;
+    
+    }
+    
+    .mainNav{
+    
+        grid-area: mainNav;
+    }
+    
+    .aside{
+    
+        grid-area: aside;
+    
+    }
+    
+    .footer{
+    
+        grid-area: footer;
+    
+    }
+
+
+    .contenedorHabilidades{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "headerHabilidades"
+        "navHabilidades"
+        "mainFormacion"
+        "asideHabilidades"
+        "footerHabilidades";
+    }
+    
+    .headerHabilidades{
+    grid-area: headerHabilidades;
+    }
+    
+    .navHabilidades{
+    grid-area: navHabilidades;
+    }
+    
+    .mainFormacion{
+    grid-area: mainFormacion;
+    }
+    
+    .asideHabilidades{
+    grid-area: asideHabilidades; 
+    }
+    
+    .footerHabilidades{
+    grid-area: footerHabilidades;
+    }
+    
+    .formacion{
+        margin-top: $margin-large;
+    }
+    
+    .habilidades{
+        margin-top: $margin-medium;
+    }
+
+    .asideFoto{
+    height: $alto-elementoXXL;
+    width: $ancho-elementoXXL;
+    border-radius: 50%;
+    display: block;
+
+   
+    }
+    
+
+}

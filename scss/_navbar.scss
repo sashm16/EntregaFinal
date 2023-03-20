@@ -1,0 +1,32 @@
+//nesting
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: $ancho-elementoXL;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right:10px;
+            a{
+                color: $mainColor;
+                text-decoration: none;
+                font-size: $textMd;
+                font-family: $mainFont;
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    width: $ancho-elementoL;
+    height:$alto-elementoL;
+    margin-top: $margin-large;
+    margin-left: $margin-large;
+}
